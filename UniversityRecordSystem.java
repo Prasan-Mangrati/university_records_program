@@ -32,7 +32,8 @@ public class UniversityRecordSystem {
                     errorMessageInvalidInputType = false;
                 }
                 if (errorMessageInvalidInput) {
-                    System.out.println("Error: !!Input Out of Range!!\nPlease enter the number between 1 - 9 (inclusive).");
+                    System.out.println(
+                            "Error: !!Input Out of Range!!\nPlease enter the number between 1 - 9 (inclusive).");
                     errorMessageInvalidInput = false;
                 }
 
@@ -70,13 +71,13 @@ public class UniversityRecordSystem {
                         return;
                     // In case if user input any other value than specified above.
                     default:
-                        errorMessageInvalidInput=true;
+                        errorMessageInvalidInput = true;
                 }
             } catch (InputMismatchException e) {
                 // This runs if the user inputs different datatype like char in input and
                 // prevent program from crashing.
                 System.out.println("Invalid Input Type.");
-                errorMessageInvalidInputType=true;
+                errorMessageInvalidInputType = true;
                 sc.nextLine();
             }
         }
